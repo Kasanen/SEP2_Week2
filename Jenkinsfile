@@ -16,6 +16,8 @@ pipeline {
         }
         stage('Build') {
             steps {
+                bat 'docker context use default'
+                bat 'docker info'
                 bat 'mvn clean install'
             }
         }
