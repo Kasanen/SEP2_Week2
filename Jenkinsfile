@@ -9,7 +9,7 @@ pipeline{
     environment {
         PATH = "/usr/local/bin:${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'Docker-Hub'
-        DOCKERHUB_REPO = 'kak3r/FuelCalculator'
+        DOCKERHUB_REPO = 'kak3r/fuelCalculator'
         DOCKER_IMAGE_TAG = 'latest'
     }
 
