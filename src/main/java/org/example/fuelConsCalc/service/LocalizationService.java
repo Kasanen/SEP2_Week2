@@ -28,7 +28,7 @@ public class LocalizationService {
             try {
                 ResourceBundle fallback = ResourceBundle.getBundle(
                         "org.example.fuelConsCalc.i18n.MessagesBundle",
-                        new Locale("en", "UK")
+                    Locale.of("en", "UK")
                 );
                 for (String key : fallback.keySet()) {
                     strings.put(key, fallback.getString(key));
